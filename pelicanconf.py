@@ -50,10 +50,10 @@ LANDING_PAGE_TITLE = "Aloha"
 PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = [
     "extract_toc",
-    "post_stats",
     "neighbors",
-    "pelican_captions",
+    "similar_posts",
 ]
+SIMILAR_POSTS_MIN_SCORE = 0.01
 
 READING_TIME_LOWER_LIMIT = 1
 
