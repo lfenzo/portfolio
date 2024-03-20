@@ -5,7 +5,6 @@ Category: Machine Learning
 Tags: data-science, machine-learning, solar-energy
 Authors: Enzo L. Fernandes
 
-![teste]({attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/sp-map.png)
 
 [TOC]
 
@@ -15,12 +14,12 @@ The objective of this project was to employ Machine Leaning techniques in order 
 
 <table>
     <tr>
-        <td><img src = "{attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/sp-map.png"></td>
-        <td><img src = "{attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/residuals_example.png"></td>
+        <td><img src = "{static}sp-map.png"></td>
+        <td><img src = "{static}sp_rain.png"></td>
     </tr>
     <tr>
-        <td><img src = "./img/errors_by_site.png"></td>
-        <td><img src = "./img/sp_rain.png"></td>
+        <td><img src = "{static}residuals_example.png"></td>
+        <td><img src = "{static}errors_by_site.png"></td>
     </tr>
 </table>
 
@@ -32,8 +31,8 @@ The proposed objective was divided in 2 procedures:
 
 <table>
     <tr>
-        <td><img src = "{attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/overview_p1.png"></td>
-        <td><img src = "{attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/overview_p2.png"></td>
+        <td><img src = "{attach}overview_p1.png"></td>
+        <td><img src = "{attach}overview_p2.png"></td>
     </tr>
 </table>
 
@@ -62,7 +61,7 @@ python <script.py> --help
 
 The imputation was performed for every feature in every station using Inverse Distance Weighting. For an imputed station A, a set of nearby stations (B, C and D) is obtained and for every timestamp in A available values in B, C and D are interpolated in order to artificially reconstruct the missing values of A.
 
-![]({attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/imputation.png)
+![]({attach}imputation.png)
 
 This process was conducted adopting a minimum of 3 valid values to interpolate, selecting nearby stations within a maximum distance of 120Km.
 
@@ -81,7 +80,7 @@ The training pipeline was designed to be fully automated and fault-tolerant: in 
 Once all the training and tuning processes are complete, the generalized prediction in a given site is schematically depicted below:
 
 <figure>
-  <img src="{attach}/articles/data-science/machine-learning/inmet-solar-saopaulo/img/prediction_summary.png" alt="Image Description">
+  <img src="{attach}prediction_summary.png" alt="Image Description">
   <figcaption>Image subtitle goes here</figcaption>
 </figure>
 

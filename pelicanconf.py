@@ -35,7 +35,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 THEME = "pelican-themes/elegant"
 
@@ -51,9 +51,8 @@ PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = [
     "extract_toc",
     "neighbors",
-    "similar_posts",
+    "render_math",
 ]
-SIMILAR_POSTS_MIN_SCORE = 0.01
 
 READING_TIME_LOWER_LIMIT = 1
 
@@ -78,9 +77,7 @@ PROJECTS = [
 
 MARKDOWN = {
     'extension_configs': {
-        'markdown.extensions.toc': {
-            'title': 'Table of Contents',
-        },
+        'markdown.extensions.toc': {},
         'markdown.extensions.codehilite': {
             'css_class': 'highlight'
         },
