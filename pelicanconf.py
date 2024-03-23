@@ -48,10 +48,12 @@ SITESUBTITLE = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo"
 LANDING_PAGE_TITLE = "Aloha"
 
 PLUGIN_PATHS = ["pelican-plugins"]
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
 PLUGINS = [
     "extract_toc",
     "neighbors",
     "render_math",
+    "tipue_search",
 ]
 
 READING_TIME_LOWER_LIMIT = 1
@@ -60,7 +62,7 @@ PROJECTS_TITLE = "Featured Projects"
 PROJECTS = [
     {
         'name': 'Multi-ensemble based approach for Short-term Solar Radiation Forecasting',
-        'url': '',
+        'url': './content/articles/data-science/machine-learning/inmet-solar-saopaulo/inmet-solar-saopaulo.md',
         'description': ''
     },
     {
